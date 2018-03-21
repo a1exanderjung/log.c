@@ -1,13 +1,12 @@
 # log.c
+
 A simple logging library implemented in C99
 
 ![screenshot](https://cloud.githubusercontent.com/assets/3920290/23831970/a2415e96-0723-11e7-9886-f8f5d2de60fe.png)
 
-
 ## Usage
-**[log.c](src/log.c?raw=1)** and **[log.h](src/log.h?raw=1)** should be dropped
-into an existing project and compiled along with it. The library provides 6
-function-like macros for logging:
+
+Either **[log.c](src/log.c?raw=1)** and **[log.h](src/log.h?raw=1)** can be dropped into an existing project and compiled along with it or the `Makefile` can be executed to build `liblog.so` as a shared library if this repository is used as a package.  The library provides 6 function-like macros for logging:
 
 ```c
 log_trace(const char *fmt, ...);
